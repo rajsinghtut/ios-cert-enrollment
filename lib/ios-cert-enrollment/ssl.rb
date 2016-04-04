@@ -10,10 +10,9 @@ module IOSCertEnrollment
 
       def certificate
         return @@certificate if @@certificate
-        return @@certificate = OpenSSL::X509::Certificate.new(IOSCertEnrollment.ssl_certificate)) if IOSCertEnrollment.ssl_certificate.present?
+        return @@certificate = OpenSSL::X509::Certificate.new(IOSCertEnrollment.ssl_certificate) if IOSCertEnrollment.ssl_certificate.present?
         return @@certificate = OpenSSL::X509::Certificate.new(File.read(IOSCertEnrollment.ssl_certificate_path))
       end
     end
-    
   end
 end
