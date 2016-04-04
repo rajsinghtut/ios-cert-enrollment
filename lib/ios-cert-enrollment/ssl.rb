@@ -1,7 +1,7 @@
 module IOSCertEnrollment
   module SSL
     @@key, @@certificate = nil
-    class << self    
+    class << self
       def key
         return @@key if @@key
         return @@key = OpenSSL::PKey::RSA.new(IOSCertEnrollment.ssl_key) if IOSCertEnrollment.ssl_key.present?
@@ -15,5 +15,5 @@ module IOSCertEnrollment
       end
     end
     
-  end  
+  end
 end
