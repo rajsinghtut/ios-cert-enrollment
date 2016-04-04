@@ -6,6 +6,8 @@ module IOSCertEnrollment
     VALID_OPTIONS_KEYS = [
       :ssl_certificate_path,
       :ssl_key_path,
+      :ssl_certificate,
+      :ssl_key,
       :base_url,
       :identifier,
       :display_name,
