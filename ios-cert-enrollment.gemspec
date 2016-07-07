@@ -1,4 +1,4 @@
-require File.expand_path('../lib/ios-cert-enrollment.rb', __FILE__)
+# require File.expand_path('../lib/ios-cert-enrollment.rb', __FILE__)
 
 spec = Gem::Specification.new do |s|
   s.name = 'ios-cert-enrollment'

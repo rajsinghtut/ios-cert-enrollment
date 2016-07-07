@@ -15,7 +15,7 @@ module IOSCertEnrollment
     ].freeze
 
     attr_accessor *VALID_OPTIONS_KEYS
-    
+
     # Convenience method to allow configuration options to be set in a block
     def configure
       yield self
