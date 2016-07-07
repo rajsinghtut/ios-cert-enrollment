@@ -1,4 +1,3 @@
-# Ensure we require the local version and not one we might have installed already
 require File.expand_path('../lib/ios-cert-enrollment.rb', __FILE__)
 
 spec = Gem::Specification.new do |s|
